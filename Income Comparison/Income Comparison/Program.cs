@@ -13,14 +13,14 @@ namespace Income_Comparison
             Console.WriteLine("Anonymous Income Comparison Program");
             Console.ReadLine();
             Console.WriteLine("Person 1");
-            Console.WriteLine("Hourly Rate?");
+            Console.WriteLine("Hourly Rate? Enter a whole number.");
             int firstHourly = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Hours Worked per Week");
+            Console.WriteLine("Hours Worked per Week? Enter a whole number.");
             int firstHours = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Person 2");
-            Console.WriteLine("Hourly Rate?");
+            Console.WriteLine("Hourly Rate? Enter a whole number.");
             int secondHourly = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Hours Worked per Week?");
+            Console.WriteLine("Hours Worked per Week? Enter a whole number.");
             int secondHours = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Annual Salary of Person 1:");
             int firstSalary = (firstHourly * firstHours) * 52;
@@ -32,7 +32,7 @@ namespace Income_Comparison
             Console.WriteLine("Does Person 1 make more money than Person 2?");
             bool salary = (firstSalary > secondSalary);
             Console.WriteLine(salary);
-            Console.Read();
+            Console.Read();   
         }
     }
 }
